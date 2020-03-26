@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Canvas 실습</title>
+    </head>
+    <body>
+        <h1>stroke() 실습...</h1>
+        <hr>
+        <canvas 
+                id="myCanvas" 
+                style="background-color:aliceblue" 
+                width="200" height="420">
+            지원해야지?
+        </canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            
+            context.font = "italic 50px arial";
+
+            context.strokeStyle = "blue";
+            context.lineWidth = 1;
+            context.strokeText("JavaScript", 30, 100);
+            
+            context.font = "italic 50px arial";
+            
+            context.fillStyle = "Yellow";
+            context.fillText("JavaScript", 30, 100);
+        </script>
+    </body>
+</html>
